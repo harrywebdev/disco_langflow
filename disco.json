@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "services": {
+    "web": {
+      "image": "langflowai/langflow:1.9.5",
+      "port": 7860,
+      "volumes": [
+        {
+          "name": "langflow-data",
+          "destinationPath": "/app/langflow"
+        }
+      ]
+    }
+  }
+}
